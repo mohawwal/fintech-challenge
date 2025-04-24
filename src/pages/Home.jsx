@@ -6,6 +6,7 @@ import CardItem from "../components/CardItem";
 import CursorIcon from "../assets/svg/cursor.svg";
 import PlusIcon from "../assets/svg/Plus.svg";
 import FacebookIcon from "../assets/svg/facebook.svg";
+import SpotifyIcon from "../assets/svg/Spotify.svg";
 
 const Home = () => {
 	return (
@@ -127,9 +128,9 @@ const Home = () => {
           </div>
           <div className="flex items-center flex-row h-[35px] w-full justify-between">
             <div className="flex items-center justify-center gap-2">
-              <img src={FacebookIcon} alt="fb" className="w-[35px] h-[35px]" />
+              <img src={SpotifyIcon} alt="fb" className="w-[35px] h-[35px]" />
               <div className="h-full flex flex-col justify-between font-normal leading-[21px]">
-                <h2 className="text-[16px]">Facebook ad revenue</h2>
+                <h2 className="text-[16px]">Spotify</h2>
                 <p className="text-[#9A9A9A] text-[12px]">11:33</p>
               </div>
             </div>
