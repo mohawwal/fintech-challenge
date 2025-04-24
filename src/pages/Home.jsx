@@ -5,6 +5,7 @@ import CardItem from "../components/CardItem";
 // import WalletImage from "../assets/images/Wallet.png";
 import CursorIcon from "../assets/svg/cursor.svg";
 import PlusIcon from "../assets/svg/Plus.svg";
+import FacebookIcon from "../assets/svg/facebook.svg";
 
 const Home = () => {
 	return (
@@ -101,9 +102,43 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[41px] my-5 flex items-center justify-center gap-3 bg-[#EFEFEF] text-[#9A9A9A] rounded-[20px]">
+      <div className="w-full h-[41px] my-6 flex items-center justify-center gap-3 bg-[#EFEFEF] text-[#9A9A9A] rounded-[20px]">
         <p>Spend and save</p>
         <img src={ArrowRightIcon} alt="right" className="w-[20px] h-[20px]" />
+      </div>
+      <div className="w-full">
+        <div className="w-full flex items-center justify-between flex-row mb-4">
+          <h2 className="font-normal text-[16px] leading-[21px]">Transactions</h2>
+          <p className="text-[#9A9A9A] text-[12px] leading-[21px]">See all</p>
+        </div>
+        <div className="w-full flex flex-col gap-7">
+          <div className="flex items-center flex-row h-[35px] w-full justify-between">
+            <div className="flex items-center justify-center gap-2">
+              <img src={FacebookIcon} alt="fb" className="w-[35px] h-[35px]" />
+              <div className="h-full flex flex-col justify-between font-normal leading-[21px]">
+                <h2 className="text-[16px]">Facebook ad revenue</h2>
+                <p className="text-[#9A9A9A] text-[12px]">11:33</p>
+              </div>
+            </div>
+            <div className="font-normal leading-[21px]">
+              <h2 className="text-[16px]">+12,445.87</h2>
+              <p className="text-right text-[#EF1616] text-[12px]">USD</p>
+            </div>
+          </div>
+          <div className="flex items-center flex-row h-[35px] w-full justify-between">
+            <div className="flex items-center justify-center gap-2">
+              <img src={FacebookIcon} alt="fb" className="w-[35px] h-[35px]" />
+              <div className="h-full flex flex-col justify-between font-normal leading-[21px]">
+                <h2 className="text-[16px]">Facebook ad revenue</h2>
+                <p className="text-[#9A9A9A] text-[12px]">11:33</p>
+              </div>
+            </div>
+            <div className="font-normal leading-[21px]">
+              <h2 className="text-[16px]">+12,445.87</h2>
+              <p className="text-right text-[#EF1616] text-[12px]">USD</p>
+            </div>
+          </div>
+        </div>
       </div>
 		</div>
 	);
