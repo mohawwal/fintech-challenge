@@ -2,7 +2,7 @@ import React from "react";
 import HideIcon from "../assets/svg/Hide.svg";
 import ArrowRightIcon from "../assets/svg/ArrowRight.svg";
 import CardItem from "../components/CardItem";
-import WalletImage from "../assets/svg/Wallet.svg";
+// import WalletImage from "../assets/images/Wallet.png";
 import CursorIcon from "../assets/svg/cursor.svg";
 import PlusIcon from "../assets/svg/Plus.svg";
 
@@ -12,7 +12,7 @@ const Home = () => {
 			<div>
 				<div className="relative h-[380px] overflow-hidden">
 					<div className="absolute rounded-[40px] bg-[#0293E4] w-full h-[265px] bottom-0"></div>
-					<div className="absolute w-auto inset-x-[-4px] bottom-0 m-[12px]">
+					<div className="absolute w-auto bottom-0 p-[12px]">
 						<div className="relative">
 							<div className="h-[160px] rounded-tl-[30px] rounded-tr-[35px] bg-[#F6F6F6] border-dashed border-[1px] border-[#C0C0C0] flex justify-center pt-2 gap-2">
 								<p className="text-[#9A9A9A] font-normal leading-[21px] text-[12px]">
@@ -43,12 +43,12 @@ const Home = () => {
 								height="45px"
 							/>
 						</div>
-						<div className="w-full h-[185px] rounded-b-[37px] relative flex flex-col items-center justify-center">
-							<img
+						<div className="w-full h-[185px] bg-pink-400 rounded-b-[37px] relative flex flex-col items-center justify-center">
+							{/* <img
 								src={WalletImage}
 								alt="wallet"
 								className="w-full h-[185px]"
-							/>
+							/> */}
 							<div className="h-[175px] absolute text-[#FFFFFF] leading-[21px] font-normal z-20 flex flex-col items-center justify-center">
 								<p className="text-[12px]">Total balance</p>
 								<p className="text-[24px] mt-[15px]">$103,500.00</p>
@@ -79,15 +79,31 @@ const Home = () => {
           </p>
         </div>
 			</div>
-      <div>
-        <div>
-          <p>Apr<span>Expenses</span></p>
-          <p>$4,567.45</p>
-          <p>Spend out of $10,000</p>
-          <div>
-            <span>red</span>
+      <div className="flex items-center justify-center w-full gap-5">
+        <div className="h-[122px] w-1/2 flex flex-col justify-center gap-[5px] items-start p-[12px] border-[1px] border-[#C0C0C0] rounded-[12px]">
+          <p className="text-[12px] leading-[21px] font-normal">Apr <span className="text-[#9A9A9A]">Expenses</span></p>
+          <p className="text-[16px] font-medium leading-[21px]">$4,567.45</p>
+          <p className="text-[12px] font-normal leading-[21px] text-[#9A9A9A]">Saved out of <span className="text-black">$10,000</span></p>
+          <div className="flex items-center w-[140px] h-[8px]">
+            <span className="h-[8px] bg-[#EF5E01] w-[62px] rounded-tl-full rounded-bl-full"></span>
+            <span className="h-full bg-[#E7A300] w-[32px]"></span>
+            <span className="h-full bg-[#355B6A] w-[26px]"></span>
+            <span className="h-full bg-[#D9D9D9] w-[20px] rounded-tr-full rounded-br-full"></span>
           </div>
         </div>
+        <div className="h-[122px] w-1/2 flex flex-col justify-center gap-[5px] items-start p-[12px] border-[1px] border-[#C0C0C0] rounded-[12px]">
+          <p className="text-[12px] leading-[21px] font-normal">Savings</p>
+          <p className="text-[16px] font-medium leading-[21px]">$4,567.45</p>
+          <p className="text-[12px] font-normal leading-[21px] text-[#9A9A9A]">Saved out of <span className="text-black">$10,000</span></p>
+          <div className="flex items-center w-[140px] h-[8px]">
+            <span className="bg-[#EF5E01] h-[8px] w-[102px] rounded-tl-full rounded-bl-full"></span>
+            <span className="h-full bg-[#E7A300] w-[38px] rounded-tr-full rounded-br-full"></span>
+          </div>
+        </div>
+      </div>
+      <div className="w-full h-[41px] my-5 flex items-center justify-center gap-3 bg-[#EFEFEF] text-[#9A9A9A] rounded-[20px]">
+        <p>Spend and save</p>
+        <img src={ArrowRightIcon} alt="right" className="w-[20px] h-[20px]" />
       </div>
 		</div>
 	);
