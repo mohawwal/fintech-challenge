@@ -111,7 +111,7 @@ const Home = () => {
           <h2 className="font-normal text-[16px] leading-[21px]">Transactions</h2>
           <p className="text-[#9A9A9A] text-[12px] leading-[21px]">See all</p>
         </div>
-        <div className="w-full flex flex-col gap-7">
+        <div className="w-full flex flex-col gap-7 mb-[50px]">
           <div className="flex items-center flex-row h-[35px] w-full justify-between">
             <div className="flex items-center justify-center gap-2">
               <img src={FacebookIcon} alt="fb" className="w-[35px] h-[35px]" />
