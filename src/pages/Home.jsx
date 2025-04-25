@@ -2,7 +2,7 @@ import React from "react";
 import HideIcon from "../assets/svg/Hide.svg";
 import ArrowRightIcon from "../assets/svg/ArrowRight.svg";
 import CardItem from "../components/CardItem";
-// import WalletImage from "../assets/images/Wallet.png";
+import WalletImage from "../assets/images/Wallet.png";
 import CursorIcon from "../assets/svg/cursor.svg";
 import PlusIcon from "../assets/svg/Plus.svg";
 import FacebookIcon from "../assets/svg/facebook.svg";
@@ -14,9 +14,9 @@ const Home = () => {
 			<div>
 				<div className="relative h-[380px] overflow-hidden">
 					<div className="absolute rounded-[40px] bg-[#0293E4] w-full h-[265px] bottom-0"></div>
-					<div className="absolute w-auto bottom-0 p-[12px]">
-						<div className="relative">
-							<div className="h-[160px] rounded-tl-[30px] rounded-tr-[35px] bg-[#F6F6F6] border-dashed border-[1px] border-[#C0C0C0] flex justify-center pt-2 gap-2">
+					<div className="absolute w-full bottom-0 p-[12px]">
+						<div className="relative w-full">
+							<div className="h-[160px] w-full rounded-tl-[30px] rounded-tr-[35px] bg-[#F6F6F6] border-dashed border-[1px] border-[#C0C0C0] flex justify-center pt-2 gap-2">
 								<p className="text-[#9A9A9A] font-normal leading-[21px] text-[12px]">
 									Click to see more cards
 								</p>
@@ -45,12 +45,12 @@ const Home = () => {
 								height="45px"
 							/>
 						</div>
-						<div className="w-full h-[185px] bg-pink-400 rounded-b-[37px] relative flex flex-col items-center justify-center">
-							{/* <img
+						<div className="w-full h-[185px] bg-[#375A6E] rounded-b-[37px] relative flex flex-col items-center justify-center">
+							<img
 								src={WalletImage}
 								alt="wallet"
 								className="w-full h-[185px]"
-							/> */}
+							/>
 							<div className="h-[175px] absolute text-[#FFFFFF] leading-[21px] font-normal z-20 flex flex-col items-center justify-center">
 								<p className="text-[12px]">Total balance</p>
 								<p className="text-[24px] mt-[15px]">$103,500.00</p>
